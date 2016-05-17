@@ -1,6 +1,5 @@
 steps_for :products_controller do
   def self.included(klass)
-    require 'pry'; binding.pry
     # This tell the rspec to use `PageController` as the described class in the helper modules
     klass.controller(ProductsController) {}
   end

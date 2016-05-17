@@ -1,3 +1,4 @@
+@product
 Feature: Product needs to have a name
 
   Scenario: Product without name is invalid

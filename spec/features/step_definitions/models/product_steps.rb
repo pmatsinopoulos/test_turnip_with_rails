@@ -1,4 +1,4 @@
-module ProductSteps
+steps_for :product do
   step "A Product" do
     @product = build :product
   end
