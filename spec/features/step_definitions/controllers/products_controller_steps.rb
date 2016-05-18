@@ -4,12 +4,6 @@ steps_for :products_controller do
     klass.controller(ProductsController) {}
   end
 
-  step "The following list of products:" do |table|
-    table.hashes.each do |product|
-      create :product, name: product['name']
-    end
-  end
-
   step "Request to get the list of products" do
     get :index
   end

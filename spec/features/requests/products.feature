@@ -2,8 +2,8 @@
 Feature: Products REST resource
 
   Scenario: GET /products
-    When The request to get product list
-    Then Returns a page with product list
+    When One sends the request to get product list
+    Then The response returns a page with product list
 
 #require 'rails_helper'
 #

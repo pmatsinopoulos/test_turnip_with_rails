@@ -43,6 +43,8 @@ end
 group :test do
   gem "gherkin", "~> 2.5"
   gem 'turnip'
+  gem 'capybara'
+  gem 'capybara-webkit'
 end
 
 group :development do
