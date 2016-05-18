@@ -6,13 +6,8 @@ Feature: Returns the list of products
       | name      |
       | product 1 |
       | product 2 |
-<<<<<<< HEAD:spec/features/controllers/products_controller.feature
-    When I request the list of products
-    Then I get the list of products in reverse order
-=======
     When Request to get the list of products
     Then Response contains the list of products in reverse order
->>>>>>> c987f6f... Models and Controllers tested with features:spec/features/controllers/products_controller.feature
 
 # require 'rails_helper'
 #

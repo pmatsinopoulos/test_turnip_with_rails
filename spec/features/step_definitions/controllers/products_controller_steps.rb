@@ -14,11 +14,7 @@ steps_for :products_controller do
     get :index
   end
 
-<<<<<<< HEAD:spec/features/step_definitions/controllers/products_controller_steps.rb
-  step "I get the list of products in reverse order" do
-=======
   step "Response contains the list of products in reverse order" do
->>>>>>> c987f6f... Models and Controllers tested with features:spec/features/step_definitions/controllers/products_controller_steps.rb
     expect(response.status).to eq(200)
     products = Product.order(id: :desc).all.to_a
 

@@ -60,7 +60,6 @@ end
 
 # RSpec.configure { |c| c.include ProductSteps }
 
-<<<<<<< HEAD
 # The following is a hack that has nothing to do with Turnip. It seems
 # there is a situation in Rails in general. The error that appears without it
 # is:
@@ -75,5 +74,3 @@ end
 RSpec.configure do |config|
   config.include AssertSelectRoot, :type => :request
 end
-=======
->>>>>>> c987f6f... Models and Controllers tested with features
