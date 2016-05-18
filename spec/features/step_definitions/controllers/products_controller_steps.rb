@@ -14,11 +14,13 @@ steps_for :products_controller do
     get :index
   end
 
-  step "I get the list of products:" do |table|
+  step "I get the list of products in reverse order" do
     expect(response.status).to eq(200)
     products = Product.order(id: :desc).all.to_a
-    table.hashes.each_with_index do |product, index|
-      expect(product['name']).to eq(products[index].name)
+
+    products_assigned = assigns(:products)
+    products_assigned.each_with_index do |pr, index|
+      expect(pr).to eq(products[index])
     end
   end
 end

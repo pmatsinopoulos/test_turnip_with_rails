@@ -60,3 +60,17 @@ end
 
 # RSpec.configure { |c| c.include ProductSteps }
 
+# The following is a hack that has nothing to do with Turnip. It seems
+# there is a situation in Rails in general. The error that appears without it
+# is:
+# NotImplementedError:
+#  Implementing document_root_element makes assert_select work without needing to specify an element to select from.
+module AssertSelectRoot
+  def document_root_element
+    html_document.root
+  end
+end
+
+RSpec.configure do |config|
+  config.include AssertSelectRoot, :type => :request
+end

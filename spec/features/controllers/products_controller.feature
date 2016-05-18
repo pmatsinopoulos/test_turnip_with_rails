@@ -7,10 +7,7 @@ Feature: Returns the list of products
       | product 1 |
       | product 2 |
     When I request the list of products
-    Then I get the list of products:
-      | name      |
-      | product 2 |
-      | product 1 |
+    Then I get the list of products in reverse order
 
 # require 'rails_helper'
 #

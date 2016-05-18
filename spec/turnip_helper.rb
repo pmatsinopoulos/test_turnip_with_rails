@@ -5,6 +5,8 @@ RSpec.configure do |config|
   config.define_derived_metadata do |metadata|
     if metadata[:controller]
       metadata[:type] = :controller
+    elsif metadata[:request]
+      metadata[:type] = :request
     end
   end
 end
